@@ -28,6 +28,8 @@ import { BookReadOperationComponent } from './bookOperation/book-read-operation/
 import { BookDetailsComponent } from '../book/book-details/book-details.component';
 import { IsBaseAdminGuard } from 'src/app/guards/is-base-admin.guard';
 import { IsAdminGuard } from 'src/app/guards/is-admin.guard';
+import { DashNavbarComponent } from './dashboard-layout/dash-navbar/dash-navbar.component';
+import { DashFooterComponent } from './dashboard-layout/dash-footer/dash-footer.component';
 
 const routes: Routes = [
   {
@@ -76,6 +78,11 @@ const routes: Routes = [
       // },
     ],
   },
+  {
+    path: '',
+    loadChildren: () =>
+      import('./staff-profile/staff-profile.module').then((m) => m.StaffProfileModule),
+    },
 ];
 @NgModule({
   declarations: [],

@@ -24,8 +24,6 @@ export class ApiService {
   }
 
   getById(url: string , id:any) {
-    // console.log(id);
-    // console.log(`${this.api_url}/${url}${id}`);
     return this._httpClient.get(`${this.api_url}/${url}${id}`, {
       headers: this.headers,
     });
