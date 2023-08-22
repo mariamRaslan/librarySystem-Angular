@@ -5,6 +5,10 @@ The project focuses on basic operations in a library like adding new member, new
 
 ## Demo-Preview
 
+
+https://github.com/mariamRaslan/librarySystem-Angular/assets/58048543/5f09e7ba-2c76-49ee-8a91-b926cc298794
+
+
 ## Table of contents
 
 - [About Library System](#about-library-system)
